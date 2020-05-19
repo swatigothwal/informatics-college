@@ -1,0 +1,85 @@
+<html>
+<title>new register page</title>
+<head>
+<style>
+.log_in{  
+   width:560px;
+padding:10% 0 0;
+margin:auto;
+     
+}
+
+.center{
+position:relative;
+z-index=1;
+background:#rgba(7,40,195,0.8);
+max-width: 360px;
+height:400px;
+margin:0 auto 100px;
+padding: 45 px;
+text-align:center;
+}
+.center input{
+font-family:"Roboto",Sans-serif;
+outline: 1;
+background:#f2f2f2;
+width:100%;
+border: 0;
+margin:0 0 15px;
+padding:15px;
+box-sizing:border-box;
+font-size:14px;
+}
+.center button{
+font-family:"Robot",Sans-serif;
+text-transform:uppercase;
+outline:0;
+background:#4CAF50;
+width:100%'
+border:0;
+padding:15px;
+color:#ffffff;
+font-size:14px;
+cursor:pointer;
+
+}
+body{
+ background-image:url(images/milestones_background.jpg);
+ background-size:cover;
+ height: 100vh;
+background-position:center;
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+<div class="log_in">
+<div class="center">
+<form action="#" onsubmit="return validation()">
+<br><br>
+<input type="text" name="name" id="user" placeholder="Username" autocomplete="off"></input></br><br>
+<span id="username" style="color:red;"></span>
+<input type="text" name="dob" id="dob" placeholder="DOB" autocomplete="off"></input><br><br><span id="username"></span>
+<input type="email"  name="email" id="email" placeholder="Email" autocomplete="off"> </input></br><br><span id="username"></span>
+<input type-"text"  name="number" id="number" placeholder="Phone Number" autocomplete="off"></input><br><br><span id="username"></span>
+<input type="password"  name="password" id="password" placeholder= "Password" autocomplete="off"></input></br>
+<span id="username"></span>
+<input type="password"  name="con"firm_password" id="confirm_password" placeholder= "Confirm Password" autocomplete="off"></input></br>
+<span id="username"></span>
+<input type="submit" name="submit" value="submit" class="btn btn-success">
+</form>
+</div>
+</div>
+<script>
+function validation(){
+var user= document.getElementById('user').value;
+if(user==" ")
+{
+      document.getElementById('username').innerHTML="Enter username";
+      return false;
+}
+
+}
+</script>
+</body>
+</html>
